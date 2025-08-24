@@ -1,0 +1,39 @@
+$bg: #121212;
+$fg: #e0e0e0;
+$primary: #2d88ff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: $bg;
+    color: $fg;
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: $primary;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  button {
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
